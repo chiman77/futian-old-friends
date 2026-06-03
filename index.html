@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>福田老友记</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:#f0f4f0;color:#2c3e2c;min-height:100vh}
+header{background:linear-gradient(135deg,#4a8c5c,#7bc085 50%,#a8e6a3);position:relative;padding:70px 20px 90px;text-align:center}
+header::before{content:"";position:absolute;bottom:-30px;left:0;right:0;height:60px;background:#f0f4f0;border-radius:50% 50% 0 0}
+header h1{font-size:3em;letter-spacing:8px;text-shadow:2px 2px 4px rgba(0,0,0,.15)}
+header p{font-size:1.15em;opacity:.92;margin-top:10px}
+section{max-width:1100px;margin:50px auto;padding:0 20px}
+section h2{text-align:center;font-size:2em;margin-bottom:15px;color:#3a6b3f;position:relative}
+section h2::after{content:"";display:block;width:60px;height:4px;background:linear-gradient(90deg,#7bc085,#a8e6a3);margin:10px auto 0;border-radius:2px}
+.section-desc{text-align:center;color:#888;margin-bottom:40px}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
+.tc{background:#fff;border-radius:22px;padding:30px 25px;text-align:center;box-shadow:0 6px 24px rgba(0,0,0,.06);transition:transform .35s,box-shadow .35s;position:relative;overflow:hidden}
+.tc::before{content:"";position:absolute;top:0;left:0;right:0;height:4px}
+.tc:nth-child(1)::before{background:linear-gradient(90deg,#ff6b6b,#ee5a24)}
+.tc:nth-child(2)::before{background:linear-gradient(90deg,#ffa502,#ff6348)}
+.tc:nth-child(3)::before{background:linear-gradient(90deg,#7bed9f,#2ed573)}
+.tc:nth-child(4)::before{background:linear-gradient(90deg,#70a1ff,#1e90ff)}
+.tc:nth-child(5)::before{background:linear-gradient(90deg,#a29bfe,#6c5ce7)}
+.tc:nth-child(6)::before{background:linear-gradient(90deg,#fd79a8,#e84393)}
+.tc:hover{transform:translateY(-10px);box-shadow:0 16px 40px rgba(0,0,0,.12)}
+.av{width:110px;height:110px;border-radius:50%;margin:0 auto 20px;overflow:hidden;border:4px solid #fff;box-shadow:0 4px 15px rgba(0,0,0,.1)}
+.av svg{width:100%;height:100%}
+.tc h3{font-size:1.4em;margin-bottom:6px}
+.role{display:inline-block;padding:4px 16px;border-radius:20px;font-size:.88em;margin-bottom:14px;font-weight:500;color:#fff}
+.tc:nth-child(1) .role{background:linear-gradient(90deg,#ff6b6b,#ee5a24)}
+.tc:nth-child(2) .role{background:linear-gradient(90deg,#ffa502,#ff6348)}
+.tc:nth-child(3) .role{background:linear-gradient(90deg,#7bed9f,#2ed573)}
+.tc:nth-child(4) .role{background:linear-gradient(90deg,#70a1ff,#1e90ff)}
+.tc:nth-child(5) .role{background:linear-gradient(90deg,#a29bfe,#6c5ce7)}
+.tc:nth-child(6) .role{background:linear-gradient(90deg,#fd79a8,#e84393)}
+.tc p{color:#666;line-height:1.7;font-size:.93em}
+.ts{background:#fff;border-radius:24px;padding:50px 40px;box-shadow:0 8px 30px rgba(0,0,0,.06);overflow:hidden}
+.tb{text-align:center;margin-bottom:10px}
+.tb svg{max-width:600px;width:100%;height:auto;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,.08)}
+.th{text-align:center;margin-bottom:10px}
+.th h3{font-size:1.8em;color:#3a6b3f}
+.th .subtitle{color:#7bc085;margin-top:6px;font-size:1.05em}
+.rl{list-style:none;max-width:650px;margin:0 auto}
+.rl li{display:flex;align-items:center;padding:18px 22px;margin-bottom:14px;background:#f8fdf8;border-radius:16px;border:1px solid #e8f5e8;transition:transform .25s,box-shadow .25s}
+.rl li:hover{transform:translateX(8px);box-shadow:0 4px 16px rgba(74,140,92,.1);background:#f0f9f0}
+.ri{font-size:2em;margin-right:18px;width:50px;text-align:center;flex-shrink:0}
+.rl h4{font-size:1.1em;color:#2c3e2c;margin-bottom:4px}
+.rl span{color:#888;font-size:.88em}
+.hl{color:#2ed573;font-weight:bold}
+footer{text-align:center;padding:50px 20px;color:#888;font-size:.9em}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.ft{animation:fl 3s ease-in-out infinite}
+@media(max-width:600px){header h1{font-size:2.2em}.team-grid{grid-template-columns:1fr}.ts{padding:30px 18px}}
+</style>
+</head>
+<body><header>
+<div style="position:relative;z-index:2">
+<svg viewBox="0 0 340 120" xmlns="http://www.w3.org/2000/svg" style="max-width:320px;width:100%;height:auto;margin-bottom:15px">
+<circle cx="170" cy="60" r="55" fill="#fff" opacity="0.15"/>
+<g transform="translate(25,18)"><circle cx="20" cy="15" r="15" fill="#FFD5B4"/><path d="M4 15 Q7 2 20 0 Q33 2 36 15" fill="#5D4037"/><circle cx="15" cy="16" r="2.5" fill="#333"/><circle cx="25" cy="16" r="2.5" fill="#333"/><path d="M14 22 Q20 27 26 22" stroke="#e74c3c" stroke-width="1.5" fill="none"/><circle cx="20" cy="42" r="13" fill="#ff6b6b"/><text x="20" y="46" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">力</text></g>
+<line x1="65" y1="60" x2="80" y2="58" stroke="rgba(255,255,255,.4)" stroke-width="2" stroke-dasharray="3,2"/>
+<g transform="translate(80,16)"><circle cx="20" cy="16" r="15" fill="#FFD5B4"/><circle cx="8" cy="10" r="7" fill="#F4A460"/><circle cx="16" cy="6" r="7" fill="#F4A460"/><circle cx="24" cy="6" r="7" fill="#F4A460"/><circle cx="32" cy="10" r="7" fill="#F4A460"/><circle cx="15" cy="16" r="3" fill="#fff"/><circle cx="25" cy="16" r="3" fill="#fff"/><circle cx="16" cy="16" r="2" fill="#333"/><circle cx="26" cy="16" r="2" fill="#333"/><path d="M13 23 Q20 30 27 23" fill="#fff" stroke="#e67e22" stroke-width="1.5"/><circle cx="20" cy="43" r="13" fill="#ffa502"/><text x="20" y="47" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">仔</text></g>
+<line x1="118" y1="58" x2="133" y2="58" stroke="rgba(255,255,255,.4)" stroke-width="2" stroke-dasharray="3,2"/>
+<g transform="translate(132,14)"><circle cx="20" cy="16" r="14" fill="#FFD5B4"/><circle cx="14" cy="15" r="7" fill="none" stroke="#2c3e50" stroke-width="2"/><circle cx="26" cy="15" r="7" fill="none" stroke="#2c3e50" stroke-width="2"/><circle cx="14" cy="15" r="2.5" fill="#333"/><circle cx="26" cy="15" r="2.5" fill="#333"/><path d="M15 22 Q20 26 25 22" stroke="#27ae60" stroke-width="1.5" fill="none"/><path d="M5 14 Q8 4 20 2 Q32 4 35 14" fill="#5D4037"/><circle cx="20" cy="41" r="13" fill="#2ed573"/><text x="20" y="45" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">面</text></g>
+<line x1="168" y1="58" x2="183" y2="58" stroke="rgba(255,255,255,.4)" stroke-width="2" stroke-dasharray="3,2"/>
+<g transform="translate(182,16)"><circle cx="20" cy="16" r="14" fill="#FFD5B4"/><ellipse cx="20" cy="8" rx="13" ry="7" fill="#FFCBA4"/><rect x="10" y="12" width="12" height="8" rx="4" fill="#1a1a2e"/><rect x="22" y="12" width="12" height="8" rx="4" fill="#1a1a2e"/><path d="M14 22 Q20 27 26 22" stroke="#2c3e50" stroke-width="1.5" fill="none"/><circle cx="20" cy="41" r="13" fill="#1e90ff"/><text x="20" y="45" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">费</text></g>
+<line x1="218" y1="58" x2="233" y2="58" stroke="rgba(255,255,255,.4)" stroke-width="2" stroke-dasharray="3,2"/>
+<g transform="translate(232,14)"><circle cx="20" cy="16" r="14" fill="#FFD5B4"/><path d="M6 14 Q9 4 20 2 Q31 4 34 14" fill="#4A4A4A"/><circle cx="15" cy="16" r="2.5" fill="#333"/><circle cx="25" cy="16" r="2.5" fill="#333"/><path d="M15 22 Q20 26 25 22" stroke="#6c5ce7" stroke-width="1.5" fill="none"/><circle cx="20" cy="41" r="13" fill="#6c5ce7"/><text x="20" y="45" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">江</text></g>
+<line x1="268" y1="58" x2="278" y2="58" stroke="rgba(255,255,255,.4)" stroke-width="2" stroke-dasharray="3,2"/>
+<g transform="translate(278,16)"><circle cx="16" cy="16" r="14" fill="#FFD5B4"/><polygon points="4,18 8,2 12,15" fill="#2c3e50"/><polygon points="10,16 14,-2 18,15" fill="#34495e"/><polygon points="16,16 20,-2 24,15" fill="#2c3e50"/><polygon points="22,18 26,2 30,18" fill="#34495e"/><circle cx="13" cy="16" r="3" fill="#fff"/><circle cx="23" cy="16" r="3" fill="#fff"/><circle cx="14" cy="16" r="2" fill="#333"/><circle cx="24" cy="16" r="2" fill="#333"/><path d="M11 22 Q18 30 25 22" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/><circle cx="18" cy="41" r="12" fill="#e84393"/><text x="18" y="45" text-anchor="middle" font-size="9" fill="#fff" font-weight="bold">鑫</text></g>
+<text x="18" y="4" font-size="10" fill="rgba(255,255,255,.6)">✦</text>
+<text x="305" y="6" font-size="8" fill="rgba(255,255,255,.5)">✦</text>
+</svg>
+<h1>🍃 福田老友记</h1>
+<p>岁月如歌，友情如酒 · 一路同行，一路高歌</p>
+</div></header><section>
+<h2>👥 六位合伙人</h2>
+<p class="section-desc">从相识到相知，我们是兄弟，更是家人</p>
+<div class="team-grid">
+<div class="tc">
+<div class="av"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<circle cx="100" cy="100" r="75" fill="#FF6B6B" opacity=".2"/><circle cx="100" cy="100" r="95" fill="#FF6B6B" opacity=".1"/>
+<ellipse cx="100" cy="165" rx="35" ry="30" fill="#2C3E50"/>
+<circle cx="100" cy="105" r="42" fill="#FFD5B4"/>
+<path d="M60 95 Q63 68 100 64 Q137 68 140 95" fill="#5D4037"/>
+<circle cx="85" cy="100" r="6" fill="#fff"/><circle cx="115" cy="100" r="6" fill="#fff"/>
+<circle cx="87" cy="100" r="4" fill="#333"/><circle cx="117" cy="100" r="4" fill="#333"/>
+<circle cx="88" cy="98" r="1.5" fill="#fff"/><circle cx="118" cy="98" r="1.5" fill="#fff"/>
+<path d="M78 90 Q85 85 92 90" stroke="#5D4037" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M108 90 Q115 85 122 90" stroke="#5D4037" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M88 118 Q100 128 112 118" stroke="#e74c3c" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<polygon points="88,60 92,46 96,56 100,44 104,56 108,46 112,60" fill="#FFD700" stroke="#FFA500" stroke-width="1.5"/>
+<circle cx="92" cy="50" r="2" fill="#ff4444"/><circle cx="100" cy="50" r="2" fill="#ff4444"/><circle cx="108" cy="50" r="2" fill="#ff4444"/>
+<text x="42" y="90" font-size="14" fill="#FFD700">⭐</text>
+</svg></div>
+<h3>肥力</h3>
+<div class="role">创始人 · 领队</div>
+<p>福田老友记的发起人，带领六位好友踏上旅程的灵魂人物。性格开朗，善于凝聚团队，是大家的定海神针。</p>
+</div>
+<div class="tc">
+<div class="av"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<circle cx="100" cy="100" r="75" fill="#FFA502" opacity=".2"/><circle cx="100" cy="100" r="95" fill="#FFA502" opacity=".1"/>
+<ellipse cx="100" cy="168" rx="40" ry="28" fill="#ffa502"/>
+<circle cx="100" cy="108" r="44" fill="#FFD5B4"/>
+<circle cx="72" cy="82" r="16" fill="#F4A460"/><circle cx="88" cy="70" r="15" fill="#F4A460"/><circle cx="110" cy="70" r="15" fill="#F4A460"/><circle cx="128" cy="82" r="16" fill="#F4A460"/>
+<circle cx="95" cy="78" r="13" fill="#F4A460"/><circle cx="115" cy="78" r="13" fill="#F4A460"/>
+<ellipse cx="100" cy="88" rx="36" ry="14" fill="#F4A460"/>
+<ellipse cx="83" cy="102" rx="8" ry="9" fill="#fff"/><ellipse cx="117" cy="102" rx="8" ry="9" fill="#fff"/>
+<circle cx="85" cy="103" r="5" fill="#333"/><circle cx="119" cy="103" r="5" fill="#333"/>
+<circle cx="87" cy="100" r="2" fill="#fff"/><circle cx="121" cy="100" r="2" fill="#fff"/>
+<path d="M82 120 Q100 138 118 120" stroke="#e67e22" stroke-width="2" fill="#fff" stroke-linecap="round"/>
+<ellipse cx="100" cy="122" rx="12" ry="6" fill="#e74c3c"/>
+<circle cx="76" cy="112" r="7" fill="#ffb6c1" opacity=".6"/><circle cx="124" cy="112" r="7" fill="#ffb6c1" opacity=".6"/>
+<text x="40" y="80" font-size="16" fill="#FFD700">⭐</text>
+</svg></div>
+<h3>肥仔</h3>
+<div class="role">开心果 · 气氛担当</div>
+<p>团队中的欢乐源泉，有他在的地方从不缺笑声。走到哪都受欢迎，是旅途中不可或缺的存在。</p>
+</div>
+<div class="tc">
+<div class="av"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<circle cx="100" cy="100" r="75" fill="#2ED573" opacity=".2"/><circle cx="100" cy="100" r="95" fill="#2ED573" opacity=".1"/>
+<ellipse cx="100" cy="165" rx="36" ry="30" fill="#2ed573"/>
+<circle cx="100" cy="108" r="40" fill="#FFD5B4"/>
+<circle cx="86" cy="100" r="12" fill="none" stroke="#2c3e50" stroke-width="3"/><circle cx="114" cy="100" r="12" fill="none" stroke="#2c3e50" stroke-width="3"/>
+<line x1="98" y1="100" x2="102" y2="100" stroke="#2c3e50" stroke-width="2.5"/>
+<circle cx="86" cy="100" r="4.5" fill="#333"/><circle cx="114" cy="100" r="4.5" fill="#333"/>
+<circle cx="87.5" cy="98.5" r="1.5" fill="#fff"/><circle cx="115.5" cy="98.5" r="1.5" fill="#fff"/>
+<path d="M62 95 Q65 68 100 65 Q135 68 138 95" fill="#5D4037"/>
+<path d="M88 118 Q100 126 112 118" stroke="#27ae60" stroke-width="2" fill="none" stroke-linecap="round"/>
+<rect x="128" y="135" width="24" height="30" rx="3" fill="#FFF8DC" stroke="#ddd" stroke-width="1"/>
+<line x1="133" y1="142" x2="147" y2="142" stroke="#aaa" stroke-width="1.5"/>
+<line x1="133" y1="148" x2="147" y2="148" stroke="#aaa" stroke-width="1.5"/>
+<path d="M128 135 L133 130 L138 135" fill="#2ed573" stroke="#27ae60" stroke-width="1"/>
+<text x="35" y="130" font-size="22" fill="#2ed573">✓</text>
+</svg></div>
+<h3>肥面</h3>
+<div class="role">后勤管家 · 细心达人</div>
+<p>做事细致入微，行程安排、吃喝玩乐都靠他打理。默默付出，让每一次出行都顺顺利利。</p>
+</div>
+<div class="tc">
+<div class="av"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<circle cx="100" cy="100" r="75" fill="#1E90FF" opacity=".2"/><circle cx="100" cy="100" r="95" fill="#1E90FF" opacity=".1"/>
+<ellipse cx="100" cy="168" rx="34" ry="28" fill="#2c3e50"/>
+<circle cx="100" cy="110" r="38" fill="#FFD5B4"/>
+<ellipse cx="100" cy="85" rx="32" ry="18" fill="#FFCBA4"/>
+<rect x="72" y="94" width="24" height="16" rx="6" fill="#1a1a2e" stroke="#333" stroke-width="2"/>
+<rect x="104" y="94" width="24" height="16" rx="6" fill="#1a1a2e" stroke="#333" stroke-width="2"/>
+<line x1="96" y1="101" x2="104" y2="101" stroke="#333" stroke-width="2"/>
+<line x1="76" y1="98" x2="84" y2="106" stroke="rgba(255,255,255,.25)" stroke-width="2"/>
+<line x1="108" y1="98" x2="116" y2="106" stroke="rgba(255,255,255,.25)" stroke-width="2"/>
+<path d="M88 122 Q100 130 112 122" stroke="#2c3e50" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M62 92 Q58 78 70 70" stroke="#555" stroke-width="3" fill="none" stroke-linecap="round"/>
+<ellipse cx="63" cy="89" rx="6" ry="8" fill="#555"/>
+<circle cx="63" cy="89" r="3" fill="#7bc085"/>
+<text x="145" y="55" font-size="18">💡</text>
+</svg></div>
+<h3>老费</h3>
+<div class="role">智囊军师 · 阅历丰富</div>
+<p>经验丰富，遇事沉着冷静，是团队的智囊担当。每次出游有他在，心里就踏实了。</p>
+</div>
+<div class="tc">
+<div class="av"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<circle cx="100" cy="100" r="75" fill="#6C5CE7" opacity=".2"/><circle cx="100" cy="100" r="95" fill="#6C5CE7" opacity=".1"/>
+<ellipse cx="100" cy="168" rx="36" ry="28" fill="#2c3e50"/>
+<path d="M80 150 L100 165 L120 150 L115 168 L85 168 Z" fill="#fff"/>
+<path d="M95 155 L100 172 L105 155" fill="#e74c3c"/>
+<circle cx="100" cy="110" r="37" fill="#FFD5B4"/>
+<path d="M65 95 Q68 72 100 68 Q132 72 135 95 L135 88 Q130 70 100 66 Q70 70 65 88 Z" fill="#4A4A4A"/>
+<ellipse cx="85" cy="106" rx="6" ry="5.5" fill="#fff"/><ellipse cx="115" cy="106" rx="6" ry="5.5" fill="#fff"/>
+<circle cx="86" cy="106" r="3.5" fill="#333"/><circle cx="116" cy="106" r="3.5" fill="#333"/>
+<circle cx="87" cy="105" r="1.2" fill="#fff"/><circle cx="117" cy="105" r="1.2" fill="#fff"/>
+<path d="M77 97 Q85 93 93 97" stroke="#555" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M107 97 Q115 93 123 97" stroke="#555" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M88 122 Q100 128 112 122" stroke="#6c5ce7" stroke-width="2" fill="none" stroke-linecap="round"/>
+<ellipse cx="58" cy="155" rx="10" ry="8" fill="#8B4513"/>
+<ellipse cx="58" cy="150" rx="10" ry="2" fill="#A0522D"/>
+<path d="M68 150 Q76 150 76 156 Q76 162 68 162" fill="none" stroke="#8B4513" stroke-width="2"/>
+<path d="M53 143 Q56 138 53 133" stroke="rgba(150,150,150,.5)" stroke-width="1.5" fill="none"/>
+<path d="M60 142 Q63 137 60 132" stroke="rgba(150,150,150,.5)" stroke-width="1.5" fill="none"/>
+</svg></div>
+<h3>江总</h3>
+<div class="role">稳重担当 · 人生导师</div>
+<p>成熟稳重，见识广博，是兄弟们的精神支柱。时不时分享的人生经验，总能让人豁然开朗。</p>
+</div>
+<div class="tc">
+<div class="av"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<circle cx="100" cy="100" r="75" fill="#E84393" opacity=".2"/><circle cx="100" cy="100" r="95" fill="#E84393" opacity=".1"/>
+<ellipse cx="100" cy="168" rx="34" ry="26" fill="#e84393"/>
+<path d="M82 155 L100 162 L118 155" stroke="#fff" stroke-width="2" fill="none"/>
+<circle cx="100" cy="110" r="36" fill="#FFD5B4"/>
+<polygon points="70,85 75,60 82,80" fill="#2c3e50"/><polygon points="80,82 85,55 92,78" fill="#34495e"/>
+<polygon points="90,80 95,50 102,77" fill="#2c3e50"/><polygon points="100,80 105,52 112,78" fill="#34495e"/>
+<polygon points="110,82 115,55 122,80" fill="#2c3e50"/><polygon points="118,85 125,60 130,85" fill="#34495e"/>
+<ellipse cx="86" cy="105" rx="7" ry="7" fill="#fff"/><ellipse cx="114" cy="105" rx="7" ry="7" fill="#fff"/>
+<circle cx="88" cy="105" r="4.5" fill="#333"/><circle cx="116" cy="105" r="4.5" fill="#333"/>
+<circle cx="89" cy="103" r="1.8" fill="#fff"/><circle cx="117" cy="103" r="1.8" fill="#fff"/>
+<path d="M78 95 L94 93" stroke="#2c3e50" stroke-width="3" stroke-linecap="round"/>
+<path d="M106 93 L122 95" stroke="#2c3e50" stroke-width="3" stroke-linecap="round"/>
+<path d="M85 118 Q100 135 115 118" fill="#e74c3c" stroke="#c0392b" stroke-width="1.5"/>
+<path d="M88 120 Q100 130 112 120" fill="#fff"/>
+<rect x="48" y="148" width="8" height="5" rx="2" fill="#2ecc71"/>
+<rect x="144" y="148" width="8" height="5" rx="2" fill="#2ecc71"/>
+<text x="145" y="75" font-size="16" fill="#f39c12">⚡</text>
+</svg></div>
+<h3>鑫哥</h3>
+<div class="role">运动健将 · 活力四射</div>
+<p>精力充沛，热爱冒险，爬山涉水冲在最前面。他总能在旅途中挖掘出最刺激的体验。</p>
+</div>
+</div></section><section>
+<div class="ts">
+<div class="tb">
+<svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="sky2" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%" style="stop-color:#87CEEB"/><stop offset="100%" style="stop-color:#E0F7FA"/>
+</linearGradient><linearGradient id="w2" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%" style="stop-color:#4FC3F7"/><stop offset="100%" style="stop-color:#29B6F6"/>
+</linearGradient></defs>
+<rect width="600" height="280" fill="url(#sky2)"/>
+<circle cx="500" cy="45" r="30" fill="#FFD54F"/>
+<line x1="500" y1="8" x2="500" y2="0" stroke="#FFD54F" stroke-width="3" stroke-linecap="round"/>
+<line x1="500" y1="90" x2="500" y2="98" stroke="#FFD54F" stroke-width="3" stroke-linecap="round"/>
+<line x1="463" y1="45" x2="455" y2="45" stroke="#FFD54F" stroke-width="3" stroke-linecap="round"/>
+<line x1="537" y1="45" x2="545" y2="45" stroke="#FFD54F" stroke-width="3" stroke-linecap="round"/>
+<ellipse cx="100" cy="35" rx="40" ry="18" fill="#fff" opacity=".9"/>
+<ellipse cx="125" cy="28" rx="28" ry="15" fill="#fff" opacity=".9"/>
+<path d="M0 220 Q80 160 160 200 Q240 170 320 195 Q400 150 480 190 Q540 170 600 200 L600 240 L0 240 Z" fill="#81C784" opacity=".6"/>
+<path d="M80 240 L110 130 L140 240 Z" fill="#66BB6A"/>
+<path d="M105 130 L110 115 L115 130" fill="#4CAF50"/>
+<path d="M200 240 L245 100 L290 240 Z" fill="#66BB6A"/>
+<path d="M240 100 L245 85 L250 100" fill="#4CAF50"/>
+<path d="M380 240 L420 120 L460 240 Z" fill="#66BB6A"/>
+<path d="M415 120 L420 105 L425 120" fill="#4CAF50"/>
+<path d="M500 240 L525 160 L550 240 Z" fill="#81C784"/>
+<rect x="0" y="230" width="600" height="50" fill="url(#w2)"/>
+<path d="M40 255 Q90 248 140 255 Q190 262 240 255 Q290 248 340 255 Q390 262 440 255 Q490 248 540 255" stroke="rgba(255,255,255,.3)" stroke-width="1.2" fill="none"/>
+<path d="M90 250 L110 275 L130 250 Z" fill="#4CAF50" opacity=".3"/>
+<path d="M210 250 L245 280 L280 250 Z" fill="#4CAF50" opacity=".3"/>
+<g transform="translate(260,235)">
+<ellipse cx="35" cy="4" rx="45" ry="7" fill="#D2691E"/>
+<line x1="0" y1="0" x2="70" y2="0" stroke="#8B4513" stroke-width="2"/>
+<line x1="10" y1="3" x2="10" y2="7" stroke="#8B4513" stroke-width="1.5"/>
+<line x1="30" y1="3" x2="30" y2="7" stroke="#8B4513" stroke-width="1.5"/>
+<line x1="50" y1="3" x2="50" y2="7" stroke="#8B4513" stroke-width="1.5"/>
+<circle cx="30" cy="-10" r="6" fill="#FFD5B4"/>
+<ellipse cx="30" cy="0" rx="7" ry="9" fill="#ff6b6b"/>
+<path d="M16 -13 Q30 -25 44 -13" fill="#DAA520"/>
+</g>
+<path d="M150 50 Q155 45 160 50" stroke="#333" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<path d="M175 38 Q180 33 185 38" stroke="#333" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<ellipse cx="340" cy="215" rx="4" ry="6" fill="#FF69B4" transform="rotate(-15,340,215)"/>
+<ellipse cx="347" cy="215" rx="4" ry="6" fill="#FF69B4" transform="rotate(15,347,215)"/>
+<rect x="345" y="212" width="2" height="6" rx="1" fill="#8B4513"/>
+<rect x="210" y="80" width="100" height="28" rx="14" fill="#fff" stroke="#81C784" stroke-width="2" opacity=".95"/>
+<text x="260" y="99" text-anchor="middle" font-size="13" font-weight="bold" fill="#4CAF50">🏔️ 桂林山水甲天下</text>
+<line x1="430" y1="100" x2="430" y2="128" stroke="#8B4513" stroke-width="2"/>
+<polygon points="430,100 455,106 430,112" fill="#e74c3c"/>
+<text x="438" y="110" font-size="7" fill="#fff" font-weight="bold">福</text>
+</svg>
+</div>
+<div class="th">
+<h3>🐅 飞虎出征</h3>
+<p class="subtitle">近期旅游计划 · 首站广西</p>
+</div>
+<ul class="rl">
+<li><div class="ri">📍</div><div><h4><span class="hl">第一站 · 广西桂林</span></h4><span>漓江竹筏 · 阳朔骑行 · 山水甲天下</span></div></li>
+<li><div class="ri">🏞️</div><div><h4>第二站 · 柳州</h4><span>品尝正宗螺蛳粉 · 探索溶洞奇观</span></div></li>
+<li><div class="ri">🌊</div><div><h4>第三站 · 南宁</h4><span>青秀山登高 · 东盟美食街大满足</span></div></li>
+<li><div class="ri">🏖️</div><div><h4>第四站 · 北海</h4><span>银滩漫步 · 涠洲岛出海捕鱼</span></div></li>
+<li><div class="ri">🎋</div><div><h4>第五站 · 德天瀑布</h4><span>跨国大瀑布 · 中越边境风光</span></div></li>
+</ul>
+</div></section><footer>
+<div class="ft">🐅 🍃 ✨</div>
+<p>© 2026 福田老友记 · 飞虎出征，四海同行</p>
+</footer>
+</body></html>
