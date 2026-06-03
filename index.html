@@ -1,4 +1,132 @@
-﻿<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>福田老友记</title><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:#f0f4f0;color:#2c3e2c;min-height:100vh}header{background:linear-gradient(135deg,#4a8c5c,#7bc085 50%,#a8e6a3);position:relative;padding:70px 20px 90px;text-align:center}header::before{content:"";position:absolute;bottom:-30px;left:0;right:0;height:60px;background:#f0f4f0;border-radius:50% 50% 0 0}header h1{font-size:3em;letter-spacing:8px;text-shadow:2px 2px 4px rgba(0,0,0,.15)}header p{font-size:1.15em;opacity:.92;margin-top:10px}section{max-width:1100px;margin:50px auto;padding:0 20px}section h2{text-align:center;font-size:2em;margin-bottom:15px;color:#3a6b3f;position:relative}section h2::after{content:"";display:block;width:60px;height:4px;background:linear-gradient(90deg,#7bc085,#a8e6a3);margin:10px auto 0;border-radius:2px}.section-desc{text-align:center;color:#888;margin-bottom:40px}.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}.tc{background:#fff;border-radius:22px;padding:30px 25px;text-align:center;box-shadow:0 6px 24px rgba(0,0,0,.06);transition:transform .35s,box-shadow .35s;position:relative;overflow:hidden}.tc::before{content:"";position:absolute;top:0;left:0;right:0;height:4px}.tc:nth-child(1)::before{background:linear-gradient(90deg,#ff6b6b,#ee5a24)}.tc:nth-child(2)::before{background:linear-gradient(90deg,#ffa502,#ff6348)}.tc:nth-child(3)::before{background:linear-gradient(90deg,#7bed9f,#2ed573)}.tc:nth-child(4)::before{background:linear-gradient(90deg,#70a1ff,#1e90ff)}.tc:nth-child(5)::before{background:linear-gradient(90deg,#a29bfe,#6c5ce7)}.tc:nth-child(6)::before{background:linear-gradient(90deg,#fd79a8,#e84393)}.tc:hover{transform:translateY(-10px);box-shadow:0 16px 40px rgba(0,0,0,.12)}.av{width:110px;height:110px;border-radius:50%;margin:0 auto 20px;overflow:hidden;border:4px solid #fff;box-shadow:0 4px 15px rgba(0,0,0,.1)}.av svg{width:100%;height:100%}.tc h3{font-size:1.4em;margin-bottom:6px}.role{display:inline-block;padding:4px 16px;border-radius:20px;font-size:.88em;margin-bottom:14px;font-weight:500;color:#fff}.tc:nth-child(1) .role{background:linear-gradient(90deg,#ff6b6b,#ee5a24)}.tc:nth-child(2) .role{background:linear-gradient(90deg,#ffa502,#ff6348)}.tc:nth-child(3) .role{background:linear-gradient(90deg,#7bed9f,#2ed573)}.tc:nth-child(4) .role{background:linear-gradient(90deg,#70a1ff,#1e90ff)}.tc:nth-child(5) .role{background:linear-gradient(90deg,#a29bfe,#6c5ce7)}.tc:nth-child(6) .role{background:linear-gradient(90deg,#fd79a8,#e84393)}.tc p{color:#666;line-height:1.7;font-size:.93em}.ts{background:#fff;border-radius:24px;padding:50px 40px;box-shadow:0 8px 30px rgba(0,0,0,.06);overflow:hidden}.tb{text-align:center;margin-bottom:10px}.tb svg{max-width:600px;width:100%;height:auto;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,.08)}.th{text-align:center;margin-bottom:10px}.th h3{font-size:1.8em;color:#3a6b3f}.th .subtitle{color:#7bc085;margin-top:6px;font-size:1.05em}.rl{list-style:none;max-width:650px;margin:0 auto}.rl li{display:flex;align-items:center;padding:18px 22px;margin-bottom:14px;background:#f8fdf8;border-radius:16px;border:1px solid #e8f5e8;transition:transform .25s,box-shadow .25s}.rl li:hover{transform:translateX(8px);box-shadow:0 4px 16px rgba(74,140,92,.1);background:#f0f9f0}.ri{font-size:2em;margin-right:18px;width:50px;text-align:center;flex-shrink:0}.rl h4{font-size:1.1em;color:#2c3e2c;margin-bottom:4px}.rl span{color:#888;font-size:.88em}.hl{color:#2ed573;font-weight:bold}footer{text-align:center;padding:50px 20px;color:#888;font-size:.9em}@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}.ft{animation:fl 3s ease-in-out infinite}@media(max-width:600px){header h1{font-size:2.2em}.team-grid{grid-template-columns:1fr}.ts{padding:30px 18px}}.enroll-btn-wrap{text-align:center;margin-top:40px}.enroll-btn{display:inline-block;padding:16px 48px;background:linear-gradient(135deg,#ff6b6b,#ee5a24);color:#fff;font-size:1.2em;font-weight:bold;border-radius:50px;text-decoration:none;transition:transform .3s,box-shadow .3s;box-shadow:0 6px 20px rgba(255,107,107,.3);cursor:pointer;border:none;letter-spacing:2px}.enroll-btn:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 10px 30px rgba(255,107,107,.4)}.enroll-btn:active{transform:translateY(0) scale(.98)}.modal-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(4px)}.modal-overlay.active{display:flex}.modal-box{background:#fff;border-radius:24px;padding:40px;max-width:520px;width:90%;max-height:90vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,.2);position:relative}.modal-box h3{font-size:1.6em;color:#3a6b3f;margin-bottom:8px;text-align:center}.modal-box .modal-sub{text-align:center;color:#888;margin-bottom:30px;font-size:.95em}.modal-box .close-btn{position:absolute;top:15px;right:20px;font-size:1.5em;color:#999;cursor:pointer;background:none;border:none;transition:color .2s}.modal-box .close-btn:hover{color:#333}.form-group{margin-bottom:20px}.form-group label{display:block;font-weight:500;margin-bottom:8px;color:#2c3e2c;font-size:.95em}.form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 16px;border:2px solid #e0e0e0;border-radius:12px;font-size:1em;font-family:inherit;transition:border-color .2s,box-shadow .2s;outline:none;background:#fafafa}.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:#7bc085;box-shadow:0 0 0 3px rgba(123,192,133,.15);background:#fff}.form-group textarea{resize:vertical;min-height:80px}.submit-btn{width:100%;padding:14px;background:linear-gradient(135deg,#4a8c5c,#7bc085);color:#fff;font-size:1.1em;font-weight:bold;border:none;border-radius:12px;cursor:pointer;transition:transform .2s,box-shadow .2s;letter-spacing:1px}.submit-btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(74,140,92,.3)}.submit-btn:active{transform:translateY(0)}.success-msg{text-align:center;padding:20px;color:#2ed573;font-size:1.1em;font-weight:bold}.success-msg .icon{font-size:3em;margin-bottom:10px}.itin-section{margin-top:40px}.itin-card{background:#f8fdf8;border:1px solid #e8f5e8;border-radius:18px;padding:25px;margin-bottom:20px;transition:transform .25s,box-shadow .25s}.itin-card:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(74,140,92,.1)}.itin-card .day-label{display:inline-block;padding:4px 14px;border-radius:20px;background:linear-gradient(135deg,#4a8c5c,#7bc085);color:#fff;font-size:.85em;font-weight:bold;margin-bottom:12px}.itin-card h4{font-size:1.2em;color:#2c3e2c;margin-bottom:8px}.itin-card .itin-time{color:#7bc085;font-size:.9em;margin-bottom:10px;font-weight:500}.itin-card p{color:#666;line-height:1.7;font-size:.93em}.itin-card ul{margin:8px 0 0 20px;color:#666;font-size:.93em;line-height:1.8}.budget-section{margin-top:40px}.budget-card{background:#fff;border-radius:18px;padding:30px;box-shadow:0 4px 20px rgba(0,0,0,.05);border:1px solid #e8f5e8}.budget-table{width:100%;border-collapse:separate;border-spacing:0 8px}.budget-table th{background:#f8fdf8;color:#3a6b3f;padding:12px 16px;text-align:left;font-size:.9em}.budget-table th:first-child{border-radius:10px 0 0 10px}.budget-table th:last-child{border-radius:0 10px 10px 0}.budget-table td{background:#fafafa;padding:12px 16px;font-size:.93em}.budget-table td:last-child{border-radius:0 10px 10px 0}.budget-table tr td:first-child{border-radius:10px 0 0 10px}.budget-total{margin-top:20px;padding:20px;background:linear-gradient(135deg,#f8fdf8,#e8f5e9);border-radius:14px;text-align:center}.budget-total .amount{font-size:2.2em;font-weight:bold;color:#ff6b6b}.budget-total .per{color:#888;font-size:.95em;margin-top:4px}.budget-note{margin-top:15px;color:#888;font-size:.88em;text-align:center;line-height:1.6}.enrolled-section{margin-top:40px}.enrolled-list{list-style:none;max-width:650px;margin:0 auto}.enrolled-item{display:flex;align-items:center;padding:14px 18px;margin-bottom:10px;background:#f8fdf8;border-radius:12px;border:1px solid #e8f5e8;transition:transform .2s}.enrolled-item:hover{transform:translateX(5px)}.enrolled-item .avatar-small{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#4a8c5c,#7bc085);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.9em;font-weight:bold;margin-right:12px;flex-shrink:0}.enrolled-item .info{flex:1}.enrolled-item .name{font-weight:500;color:#2c3e2c}.enrolled-item .meta{color:#888;font-size:.85em}</style></head><body><header>
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>福田老友记</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:#f0f4f0;color:#2c3e2c;min-height:100vh}
+header{background:linear-gradient(135deg,#4a8c5c,#7bc085 50%,#a8e6a3);position:relative;padding:70px 20px 90px;text-align:center}
+header::before{content:"";position:absolute;bottom:-30px;left:0;right:0;height:60px;background:#f0f4f0;border-radius:50% 50% 0 0}
+header h1{font-size:3em;letter-spacing:8px;text-shadow:2px 2px 4px rgba(0,0,0,.15)}
+header p{font-size:1.15em;opacity:.92;margin-top:10px}
+section{max-width:1100px;margin:50px auto;padding:0 20px}
+section h2{text-align:center;font-size:2em;margin-bottom:15px;color:#3a6b3f;position:relative}
+section h2::after{content:"";display:block;width:60px;height:4px;background:linear-gradient(90deg,#7bc085,#a8e6a3);margin:10px auto 0;border-radius:2px}
+.section-desc{text-align:center;color:#888;margin-bottom:40px}
+
+/* Team Grid */
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
+.tc{background:#fff;border-radius:22px;padding:30px 25px;text-align:center;box-shadow:0 6px 24px rgba(0,0,0,.06);transition:transform .35s,box-shadow .35s;position:relative;overflow:hidden}
+.tc::before{content:"";position:absolute;top:0;left:0;right:0;height:4px}
+.tc:nth-child(1)::before{background:linear-gradient(90deg,#ff6b6b,#ee5a24)}
+.tc:nth-child(2)::before{background:linear-gradient(90deg,#ffa502,#ff6348)}
+.tc:nth-child(3)::before{background:linear-gradient(90deg,#7bed9f,#2ed573)}
+.tc:nth-child(4)::before{background:linear-gradient(90deg,#70a1ff,#1e90ff)}
+.tc:nth-child(5)::before{background:linear-gradient(90deg,#a29bfe,#6c5ce7)}
+.tc:nth-child(6)::before{background:linear-gradient(90deg,#fd79a8,#e84393)}
+.tc:hover{transform:translateY(-10px);box-shadow:0 16px 40px rgba(0,0,0,.12)}
+.av{width:110px;height:110px;border-radius:50%;margin:0 auto 20px;overflow:hidden;border:4px solid #fff;box-shadow:0 4px 15px rgba(0,0,0,.1)}
+.av svg{width:100%;height:100%}
+.tc h3{font-size:1.4em;margin-bottom:6px}
+.role{display:inline-block;padding:4px 16px;border-radius:20px;font-size:.88em;margin-bottom:14px;font-weight:500;color:#fff}
+.tc:nth-child(1) .role{background:linear-gradient(90deg,#ff6b6b,#ee5a24)}
+.tc:nth-child(2) .role{background:linear-gradient(90deg,#ffa502,#ff6348)}
+.tc:nth-child(3) .role{background:linear-gradient(90deg,#7bed9f,#2ed573)}
+.tc:nth-child(4) .role{background:linear-gradient(90deg,#70a1ff,#1e90ff)}
+.tc:nth-child(5) .role{background:linear-gradient(90deg,#a29bfe,#6c5ce7)}
+.tc:nth-child(6) .role{background:linear-gradient(90deg,#fd79a8,#e84393)}
+.tc p{color:#666;line-height:1.7;font-size:.93em}
+
+/* Trip Section */
+.ts{background:#fff;border-radius:24px;padding:50px 40px;box-shadow:0 8px 30px rgba(0,0,0,.06);overflow:hidden}
+.tb{text-align:center;margin-bottom:10px}
+.tb svg{max-width:600px;width:100%;height:auto;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,.08)}
+.th{text-align:center;margin-bottom:10px}
+.th h3{font-size:1.8em;color:#3a6b3f}
+.th .subtitle{color:#7bc085;margin-top:6px;font-size:1.05em;text-align:center}
+.rl{list-style:none;max-width:650px;margin:0 auto;text-align:center}
+.rl li{display:flex;align-items:center;justify-content:center;padding:18px 22px;margin-bottom:14px;background:#f8fdf8;border-radius:16px;border:1px solid #e8f5e8;transition:transform .25s,box-shadow .25s}
+.rl li:hover{transform:translateX(8px);box-shadow:0 4px 16px rgba(74,140,92,.1);background:#f0f9f0}
+.ri{font-size:2em;margin-right:18px;width:50px;text-align:center;flex-shrink:0}
+.rl h4{font-size:1.1em;color:#2c3e2c;margin-bottom:4px;text-align:center}
+.rl span{color:#888;font-size:.88em}
+.hl{color:#2ed573;font-weight:bold}
+
+/* Enrollment Section */
+.enrollment-section{text-align:center;margin-top:50px;padding-bottom:30px}
+.enroll-btn{display:inline-block;padding:16px 48px;background:linear-gradient(135deg,#ff6b6b,#ee5a24);color:#fff;font-size:1.2em;font-weight:bold;border-radius:50px;border:none;cursor:pointer;letter-spacing:2px;box-shadow:0 6px 20px rgba(255,107,107,.3);transition:transform .3s,box-shadow .3s}
+.enroll-btn:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 10px 30px rgba(255,107,107,.4)}
+.enroll-btn:active{transform:translateY(0) scale(.98)}
+
+/* Itinerary Cards */
+.itin-section{margin-top:40px;text-align:center}
+.itin-card{background:#f8fdf8;border:1px solid #e8f5e8;border-radius:18px;padding:25px;margin-bottom:20px;transition:transform .25s,box-shadow .25s;text-align:center}
+.itin-card:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(74,140,92,.1)}
+.itin-card .day-label{display:inline-block;padding:4px 14px;border-radius:20px;background:linear-gradient(135deg,#4a8c5c,#7bc085);color:#fff;font-size:.85em;font-weight:bold;margin-bottom:12px}
+.itin-card h4{font-size:1.2em;color:#2c3e2c;margin-bottom:8px}
+.itin-card p{color:#666;line-height:1.7;font-size:.93em}
+.itin-card ul{margin:8px 0 0 0;padding:0;list-style:none;color:#666;font-size:.93em;line-height:1.8}
+
+/* Budget */
+.budget-section{margin-top:40px;text-align:center}
+.budget-card{background:#fff;border-radius:18px;padding:30px;box-shadow:0 4px 20px rgba(0,0,0,.05);border:1px solid #e8f5e8;text-align:center;max-width:700px;margin:0 auto}
+.budget-table{width:100%;border-collapse:separate;border-spacing:0 8px;text-align:center;table-layout:fixed}
+.budget-table th{background:#f8fdf8;color:#3a6b3f;padding:12px 16px;text-align:center;font-size:.9em}
+.budget-table th:first-child{border-radius:10px 0 0 10px}
+.budget-table th:last-child{border-radius:0 10px 10px 0}
+.budget-table td{background:#fafafa;padding:12px 16px;font-size:.93em;text-align:center}
+.budget-table td:last-child{border-radius:0 10px 10px 0;text-align:center}
+.budget-table tr td:first-child{border-radius:10px 0 0 10px;text-align:center}
+.budget-total{margin-top:20px;padding:20px;background:linear-gradient(135deg,#f8fdf8,#e8f5e9);border-radius:14px;text-align:center}
+.budget-total .amount{font-size:2.2em;font-weight:bold;color:#ff6b6b}
+.budget-total .per{color:#888;font-size:.95em;margin-top:4px}
+.budget-note{margin-top:15px;color:#888;font-size:.88em;text-align:center;line-height:1.6}
+
+/* Enrolled List */
+.enrolled-section{margin-top:40px;text-align:center}
+.enrolled-list{list-style:none;max-width:650px;margin:0 auto;text-align:center}
+.enrolled-item{display:flex;align-items:center;justify-content:center;padding:14px 18px;margin-bottom:10px;background:#f8fdf8;border-radius:12px;border:1px solid #e8f5e8;transition:transform .2s;text-align:center}
+.enrolled-item:hover{transform:translateX(5px)}
+.enrolled-item .avatar-small{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#4a8c5c,#7bc085);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.9em;font-weight:bold;margin-right:12px;flex-shrink:0}
+.enrolled-item .info{flex:1;text-align:center}
+.enrolled-item .name{font-weight:500;color:#2c3e2c;text-align:center}
+.enrolled-item .meta{color:#888;font-size:.85em;text-align:center}
+
+/* Modal */
+.modal-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);z-index:1000;justify-content:center;align-items:center;backdrop-filter:blur(4px)}
+.modal-overlay.active{display:flex}
+.modal-box{background:#fff;border-radius:24px;padding:40px;max-width:520px;width:90%;max-height:90vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,.2);position:relative;text-align:center}
+.modal-box h3{font-size:1.6em;color:#3a6b3f;margin-bottom:8px}
+.modal-box .modal-sub{color:#888;margin-bottom:30px;font-size:.95em}
+.modal-box .close-btn{position:absolute;top:15px;right:20px;font-size:1.5em;color:#999;cursor:pointer;background:none;border:none;transition:color .2s}
+.modal-box .close-btn:hover{color:#333}
+.form-group{margin-bottom:20px;text-align:center}
+.form-group label{display:block;font-weight:500;margin-bottom:8px;color:#2c3e2c;font-size:.95em}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 16px;border:2px solid #e0e0e0;border-radius:12px;font-size:1em;font-family:inherit;transition:border-color .2s,box-shadow .2s;outline:none;background:#fafafa}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:#7bc085;box-shadow:0 0 0 3px rgba(123,192,133,.15);background:#fff}
+.form-group textarea{resize:vertical;min-height:80px}
+.submit-btn{width:100%;padding:14px;background:linear-gradient(135deg,#4a8c5c,#7bc085);color:#fff;font-size:1.1em;font-weight:bold;border:none;border-radius:12px;cursor:pointer;transition:transform .2s,box-shadow .2s;letter-spacing:1px}
+.submit-btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(74,140,92,.3)}
+.submit-btn:active{transform:translateY(0)}
+.success-msg{text-align:center;padding:20px;color:#2ed573;font-size:1.1em;font-weight:bold}
+.success-msg .icon{font-size:3em;margin-bottom:10px}
+
+footer{text-align:center;padding:50px 20px;color:#888;font-size:.9em}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.ft{animation:fl 3s ease-in-out infinite}
+@media(max-width:600px){
+  header h1{font-size:2.2em}
+  .team-grid{grid-template-columns:1fr}
+  .ts{padding:30px 18px}
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
 <div style="position:relative;z-index:2">
 <svg viewBox="0 0 340 120" xmlns="http://www.w3.org/2000/svg" style="max-width:320px;width:100%;height:auto;margin-bottom:15px">
 <circle cx="170" cy="60" r="55" fill="#fff" opacity="0.15"/>
@@ -13,145 +141,203 @@
 <g transform="translate(232,14)"><circle cx="20" cy="16" r="14" fill="#FFD5B4"/><path d="M6 14 Q9 4 20 2 Q31 4 34 14" fill="#4A4A4A"/><circle cx="15" cy="16" r="2.5" fill="#333"/><circle cx="25" cy="16" r="2.5" fill="#333"/><path d="M15 22 Q20 26 25 22" stroke="#6c5ce7" stroke-width="1.5" fill="none"/><circle cx="20" cy="41" r="13" fill="#6c5ce7"/><text x="20" y="45" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">江</text></g>
 <line x1="268" y1="58" x2="278" y2="58" stroke="rgba(255,255,255,.4)" stroke-width="2" stroke-dasharray="3,2"/>
 <g transform="translate(278,16)"><circle cx="16" cy="16" r="14" fill="#FFD5B4"/><polygon points="4,18 8,2 12,15" fill="#2c3e50"/><polygon points="10,16 14,-2 18,15" fill="#34495e"/><polygon points="16,16 20,-2 24,15" fill="#2c3e50"/><polygon points="22,18 26,2 30,18" fill="#34495e"/><circle cx="13" cy="16" r="3" fill="#fff"/><circle cx="23" cy="16" r="3" fill="#fff"/><circle cx="14" cy="16" r="2" fill="#333"/><circle cx="24" cy="16" r="2" fill="#333"/><path d="M11 22 Q18 30 25 22" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/><circle cx="18" cy="41" r="12" fill="#e84393"/><text x="18" y="45" text-anchor="middle" font-size="9" fill="#fff" font-weight="bold">鑫</text></g>
-<text x="18" y="4" font-size="10" fill="rgba(255,255,255,.6)">✦</text>
-<text x="305" y="6" font-size="8" fill="rgba(255,255,255,.5)">✦</text>
+<text x="18" y="4" font-size="10" fill="rgba(255,255,255,.6)">&#10022;</text>
+<text x="305" y="6" font-size="8" fill="rgba(255,255,255,.5)">&#10022;</text>
 </svg>
-<h1>🍃 福田老友记</h1>
+<h1>&#127811; 福田老友记</h1>
 <p>岁月如歌，友情如酒 · 一路同行，一路高歌</p>
-</div></header><section>
-<h2>👥 六位老友记</h2>
+</div>
+</header>
+
+<!-- Team Section -->
+<section>
 <p class="section-desc">从相识到相知，我们是盆友，更是兄弟</p>
 <div class="team-grid">
+
+<!-- 肥力 -->
 <div class="tc">
-<div class="av"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-<circle cx="100" cy="100" r="75" fill="#FF6B6B" opacity=".2"/><circle cx="100" cy="100" r="95" fill="#FF6B6B" opacity=".1"/>
-<ellipse cx="100" cy="165" rx="35" ry="30" fill="#2C3E50"/>
-<circle cx="100" cy="105" r="42" fill="#FFD5B4"/>
-<path d="M60 95 Q63 68 100 64 Q137 68 140 95" fill="#5D4037"/>
-<circle cx="85" cy="100" r="6" fill="#fff"/><circle cx="115" cy="100" r="6" fill="#fff"/>
-<circle cx="87" cy="100" r="4" fill="#333"/><circle cx="117" cy="100" r="4" fill="#333"/>
-<circle cx="88" cy="98" r="1.5" fill="#fff"/><circle cx="118" cy="98" r="1.5" fill="#fff"/>
-<path d="M78 90 Q85 85 92 90" stroke="#5D4037" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-<path d="M108 90 Q115 85 122 90" stroke="#5D4037" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-<path d="M88 118 Q100 128 112 118" stroke="#e74c3c" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-<polygon points="88,60 92,46 96,56 100,44 104,56 108,46 112,60" fill="#FFD700" stroke="#FFA500" stroke-width="1.5"/>
-<circle cx="92" cy="50" r="2" fill="#ff4444"/><circle cx="100" cy="50" r="2" fill="#ff4444"/><circle cx="108" cy="50" r="2" fill="#ff4444"/>
-<text x="42" y="90" font-size="14" fill="#FFD700">⭐</text>
-</svg></div>
-<h3>肥力</h3><div class="role">创始人 · 领队</div>
-<p>福田老友记的发起人，带领六位好友踏上旅程的灵魂人物。性格开朗，善于凝聚团队，是大家的定海神针。</p>
+<div class="av"><svg viewBox="0 0 100 100"><circle cx="50" cy="35" r="25" fill="#FFD5B4"/><path d="M15 35 Q20 5 50 0 Q80 5 85 35" fill="#5D4037"/><circle cx="40" cy="38" r="4" fill="#333"/><circle cx="60" cy="38" r="4" fill="#333"/><path d="M38 48 Q50 58 62 48" stroke="#e74c3c" stroke-width="2" fill="none"/><circle cx="50" cy="72" r="22" fill="#ff6b6b"/><text x="50" y="78" text-anchor="middle" font-size="18" fill="#fff" font-weight="bold">力</text></svg></div>
+<h3>肥力</h3><span class="role">创始人 · 领队</span>
+<p>老大担当，统筹全局，决策果断，是团队的主心骨和精神领袖。</p>
 </div>
+
+<!-- 肥仔 -->
 <div class="tc">
-<div class="av"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-<circle cx="100" cy="100" r="75" fill="#FFA502" opacity=".2"/><circle cx="100" cy="100" r="95" fill="#FFA502" opacity=".1"/>
-<ellipse cx="100" cy="168" rx="40" ry="28" fill="#ffa502"/>
-<circle cx="100" cy="108" r="44" fill="#FFD5B4"/>
-<circle cx="72" cy="82" r="16" fill="#F4A460"/><circle cx="88" cy="70" r="15" fill="#F4A460"/><circle cx="110" cy="70" r="15" fill="#F4A460"/><circle cx="128" cy="82" r="16" fill="#F4A460"/>
-<circle cx="95" cy="78" r="13" fill="#F4A460"/><circle cx="115" cy="78" r="13" fill="#F4A460"/>
-<ellipse cx="100" cy="88" rx="36" ry="14" fill="#F4A460"/>
-<ellipse cx="83" cy="102" rx="8" ry="9" fill="#fff"/><ellipse cx="117" cy="102" rx="8" ry="9" fill="#fff"/>
-<circle cx="85" cy="103" r="5" fill="#333"/><circle cx="119" cy="103" r="5" fill="#333"/>
-<circle cx="87" cy="100" r="2" fill="#fff"/><circle cx="121" cy="100" r="2" fill="#fff"/>
-<path d="M82 120 Q100 138 118 120" stroke="#e67e22" stroke-width="2" fill="#fff" stroke-linecap="round"/>
-<ellipse cx="100" cy="122" rx="12" ry="6" fill="#e74c3c"/>
-<circle cx="76" cy="112" r="7" fill="#ffb6c1" opacity=".6"/><circle cx="124" cy="112" r="7" fill="#ffb6c1" opacity=".6"/>
-<text x="40" y="80" font-size="16" fill="#FFD700">⭐</text>
-</svg></div>
-<h3>肥仔</h3><div class="role">开心果 · 气氛担当</div>
-<p>团队中的欢乐源泉，有他在的地方从不缺笑声。走到哪都受欢迎，是旅途中不可或缺的存在。</p>
+<div class="av"><svg viewBox="0 0 100 100"><circle cx="50" cy="35" r="25" fill="#FFD5B4"/><circle cx="28" cy="25" r="12" fill="#F4A460"/><circle cx="40" cy="18" r="12" fill="#F4A460"/><circle cx="60" cy="18" r="12" fill="#F4A460"/><circle cx="72" cy="25" r="12" fill="#F4A460"/><circle cx="38" cy="35" r="4" fill="#fff"/><circle cx="58" cy="35" r="4" fill="#fff"/><circle cx="40" cy="35" r="3" fill="#333"/><circle cx="60" cy="35" r="3" fill="#333"/><path d="M36 46 Q50 58 64 46" fill="#fff" stroke="#e67e22" stroke-width="2"/><circle cx="50" cy="72" r="22" fill="#ffa502"/><text x="50" y="78" text-anchor="middle" font-size="18" fill="#fff" font-weight="bold">仔</text></svg></div>
+<h3>肥仔</h3><span class="role">气氛担当</span>
+<p>团队开心果，走到哪里笑声就带到哪里，有他在就不会冷场。</p>
 </div>
+
+<!-- 肥面 -->
 <div class="tc">
-<div class="av"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-<circle cx="100" cy="100" r="75" fill="#2ED573" opacity=".2"/><circle cx="100" cy="100" r="95" fill="#2ED573" opacity=".1"/>
-<ellipse cx="100" cy="165" rx="36" ry="30" fill="#2ed573"/>
-<circle cx="100" cy="108" r="40" fill="#FFD5B4"/>
-<circle cx="86" cy="100" r="12" fill="none" stroke="#2c3e50" stroke-width="3"/><circle cx="114" cy="100" r="12" fill="none" stroke="#2c3e50" stroke-width="3"/>
-<line x1="98" y1="100" x2="102" y2="100" stroke="#2c3e50" stroke-width="2.5"/>
-<circle cx="86" cy="100" r="4.5" fill="#333"/><circle cx="114" cy="100" r="4.5" fill="#333"/>
-<circle cx="87.5" cy="98.5" r="1.5" fill="#fff"/><circle cx="115.5" cy="98.5" r="1.5" fill="#fff"/>
-<path d="M62 95 Q65 68 100 65 Q135 68 138 95" fill="#5D4037"/>
-<path d="M88 118 Q100 126 112 118" stroke="#27ae60" stroke-width="2" fill="none" stroke-linecap="round"/>
-<rect x="128" y="135" width="24" height="30" rx="3" fill="#FFF8DC" stroke="#ddd" stroke-width="1"/>
-<line x1="133" y1="142" x2="147" y2="142" stroke="#aaa" stroke-width="1.5"/>
-<line x1="133" y1="148" x2="147" y2="148" stroke="#aaa" stroke-width="1.5"/>
-<path d="M128 135 L133 130 L138 135" fill="#2ed573" stroke="#27ae60" stroke-width="1"/>
-<text x="35" y="130" font-size="22" fill="#2ed573">✓</text>
-</svg></div>
-<h3>肥面</h3><div class="role">后勤管家 · 细心达人</div>
-<p>做事细致入微，行程安排、吃喝玩乐都靠他打理。默默付出，让每一次出行都顺顺利利。</p>
+<div class="av"><svg viewBox="0 0 100 100"><circle cx="50" cy="35" r="25" fill="#FFD5B4"/><circle cx="38" cy="32" r="12" fill="none" stroke="#2c3e50" stroke-width="3"/><circle cx="62" cy="32" r="12" fill="none" stroke="#2c3e50" stroke-width="3"/><circle cx="38" cy="32" r="4" fill="#333"/><circle cx="62" cy="32" r="4" fill="#333"/><path d="M36 45 Q50 55 64 45" stroke="#27ae60" stroke-width="2" fill="none"/><path d="M18 30 Q22 10 50 5 Q78 10 82 30" fill="#5D4037"/><circle cx="50" cy="72" r="22" fill="#2ed573"/><text x="50" y="78" text-anchor="middle" font-size="18" fill="#fff" font-weight="bold">面</text></svg></div>
+<h3>肥面</h3><span class="role">后勤管家</span>
+<p>细致入微，行程安排、物资准备一把好手，有肥面在，大家什么都不用愁。</p>
 </div>
+
+<!-- 老费 -->
 <div class="tc">
-<div class="av"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-<circle cx="100" cy="100" r="75" fill="#1E90FF" opacity=".2"/><circle cx="100" cy="100" r="95" fill="#1E90FF" opacity=".1"/>
-<ellipse cx="100" cy="168" rx="34" ry="28" fill="#2c3e50"/>
-<circle cx="100" cy="110" r="38" fill="#FFD5B4"/>
-<ellipse cx="100" cy="85" rx="32" ry="18" fill="#FFCBA4"/>
-<rect x="72" y="94" width="24" height="16" rx="6" fill="#1a1a2e" stroke="#333" stroke-width="2"/>
-<rect x="104" y="94" width="24" height="16" rx="6" fill="#1a1a2e" stroke="#333" stroke-width="2"/>
-<line x1="96" y1="101" x2="104" y2="101" stroke="#333" stroke-width="2"/>
-<line x1="76" y1="98" x2="84" y2="106" stroke="rgba(255,255,255,.25)" stroke-width="2"/>
-<line x1="108" y1="98" x2="116" y2="106" stroke="rgba(255,255,255,.25)" stroke-width="2"/>
-<path d="M88 122 Q100 130 112 122" stroke="#2c3e50" stroke-width="2" fill="none" stroke-linecap="round"/>
-<path d="M62 92 Q58 78 70 70" stroke="#555" stroke-width="3" fill="none" stroke-linecap="round"/>
-<ellipse cx="63" cy="89" rx="6" ry="8" fill="#555"/>
-<circle cx="63" cy="89" r="3" fill="#7bc085"/>
-<text x="145" y="55" font-size="18">💡</text>
-</svg></div>
-<h3>老费</h3><div class="role">智囊军师 · 阅历丰富</div>
-<p>经验丰富，遇事沉着冷静，是团队的智囊担当。每次出游有他在，心里就踏实了。</p>
+<div class="av"><svg viewBox="0 0 100 100"><circle cx="50" cy="35" r="25" fill="#FFD5B4"/><ellipse cx="50" cy="18" rx="20" ry="12" fill="#FFCBA4"/><rect x="32" y="26" width="18" height="12" rx="6" fill="#1a1a2e"/><rect x="50" y="26" width="18" height="12" rx="6" fill="#1a1a2e"/><path d="M38 45 Q50 55 62 45" stroke="#2c3e50" stroke-width="2" fill="none"/><circle cx="50" cy="72" r="22" fill="#1e90ff"/><text x="50" y="78" text-anchor="middle" font-size="18" fill="#fff" font-weight="bold">费</text></svg></div>
+<h3>老费</h3><span class="role">智囊军师</span>
+<p>思维缜密，足智多谋，关键时刻总能给出最靠谱的方案和建议。</p>
 </div>
+
+<!-- 江总 -->
 <div class="tc">
-<div class="av"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-<circle cx="100" cy="100" r="75" fill="#6C5CE7" opacity=".2"/><circle cx="100" cy="100" r="95" fill="#6C5CE7" opacity=".1"/>
-<ellipse cx="100" cy="168" rx="36" ry="28" fill="#2c3e50"/>
-<path d="M80 150 L100 165 L120 150 L115 168 L85 168 Z" fill="#fff"/>
-<path d="M95 155 L100 172 L105 155" fill="#e74c3c"/>
-<circle cx="100" cy="110" r="37" fill="#FFD5B4"/>
-<path d="M65 95 Q68 72 100 68 Q132 72 135 95 L135 88 Q130 70 100 66 Q70 70 65 88 Z" fill="#4A4A4A"/>
-<ellipse cx="85" cy="106" rx="6" ry="5.5" fill="#fff"/><ellipse cx="115" cy="106" rx="6" ry="5.5" fill="#fff"/>
-<circle cx="86" cy="106" r="3.5" fill="#333"/><circle cx="116" cy="106" r="3.5" fill="#333"/>
-<circle cx="87" cy="105" r="1.2" fill="#fff"/><circle cx="117" cy="105" r="1.2" fill="#fff"/>
-<path d="M77 97 Q85 93 93 97" stroke="#555" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-<path d="M107 97 Q115 93 123 97" stroke="#555" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-<path d="M88 122 Q100 128 112 122" stroke="#6c5ce7" stroke-width="2" fill="none" stroke-linecap="round"/>
-<ellipse cx="58" cy="155" rx="10" ry="8" fill="#8B4513"/>
-<ellipse cx="58" cy="150" rx="10" ry="2" fill="#A0522D"/>
-<path d="M68 150 Q76 150 76 156 Q76 162 68 162" fill="none" stroke="#8B4513" stroke-width="2"/>
-<path d="M53 143 Q56 138 53 133" stroke="rgba(150,150,150,.5)" stroke-width="1.5" fill="none"/>
-<path d="M60 142 Q63 137 60 132" stroke="rgba(150,150,150,.5)" stroke-width="1.5" fill="none"/>
-</svg></div>
-<h3>江总</h3><div class="role">稳重担当 · 人生导师</div>
-<p>成熟稳重，见识广博，是兄弟们的精神支柱。时不时分享的人生经验，总能让人豁然开朗。</p>
+<div class="av"><svg viewBox="0 0 100 100"><circle cx="50" cy="35" r="25" fill="#FFD5B4"/><path d="M18 30 Q22 10 50 5 Q78 10 82 30" fill="#4A4A4A"/><circle cx="38" cy="38" r="4" fill="#333"/><circle cx="62" cy="38" r="4" fill="#333"/><path d="M36 45 Q50 55 64 45" stroke="#6c5ce7" stroke-width="2" fill="none"/><circle cx="50" cy="72" r="22" fill="#6c5ce7"/><text x="50" y="78" text-anchor="middle" font-size="18" fill="#fff" font-weight="bold">江</text></svg></div>
+<h3>江总</h3><span class="role">稳重担当</span>
+<p>沉稳大气，处变不惊，有他在团队就踏实，关键时刻力挽狂澜。</p>
 </div>
+
+<!-- 鑫哥 -->
 <div class="tc">
-<div class="av"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-<circle cx="100" cy="100" r="75" fill="#E84393" opacity=".2"/><circle cx="100" cy="100" r="95" fill="#E84393" opacity=".1"/>
-<ellipse cx="100" cy="168" rx="34" ry="26" fill="#e84393"/>
-<path d="M82 155 L100 162 L118 155" stroke="#fff" stroke-width="2" fill="none"/>
-<circle cx="100" cy="110" r="36" fill="#FFD5B4"/>
-<polygon points="70,85 75,60 82,80" fill="#2c3e50"/><polygon points="80,82 85,55 92,78" fill="#34495e"/>
-<polygon points="90,80 95,50 102,77" fill="#2c3e50"/><polygon points="100,80 105,52 112,78" fill="#34495e"/>
-<polygon points="110,82 115,55 122,80" fill="#2c3e50"/><polygon points="118,85 125,60 130,85" fill="#34495e"/>
-<ellipse cx="86" cy="105" rx="7" ry="7" fill="#fff"/><ellipse cx="114" cy="105" rx="7" ry="7" fill="#fff"/>
-<circle cx="88" cy="105" r="4.5" fill="#333"/><circle cx="116" cy="105" r="4.5" fill="#333"/>
-<circle cx="89" cy="103" r="1.8" fill="#fff"/><circle cx="117" cy="103" r="1.8" fill="#fff"/>
-<path d="M78 95 L94 93" stroke="#2c3e50" stroke-width="3" stroke-linecap="round"/>
-<path d="M106 93 L122 95" stroke="#2c3e50" stroke-width="3" stroke-linecap="round"/>
-<path d="M85 118 Q100 135 115 118" fill="#e74c3c" stroke="#c0392b" stroke-width="1.5"/>
-<path d="M88 120 Q100 130 112 120" fill="#fff"/>
-<rect x="48" y="148" width="8" height="5" rx="2" fill="#2ecc71"/>
-<rect x="144" y="148" width="8" height="5" rx="2" fill="#2ecc71"/>
-<text x="145" y="75" font-size="16" fill="#f39c12">⚡</text>
-</svg></div>
-<h3>鑫哥</h3><div class="role">运动健将 · 活力四射</div>
-<p>精力充沛，热爱冒险，爬山涉水冲在最前面。他总能在旅途中挖掘出最刺激的体验。</p>
+<div class="av"><svg viewBox="0 0 100 100"><circle cx="48" cy="35" r="25" fill="#FFD5B4"/><polygon points="20,38 28,8 38,35" fill="#2c3e50"/><polygon points="32,36 38,0 46,35" fill="#34495e"/><polygon points="46,36 52,0 60,35" fill="#2c3e50"/><polygon points="58,38 64,8 72,38" fill="#34495e"/><circle cx="38" cy="38" r="4" fill="#fff"/><circle cx="58" cy="38" r="4" fill="#fff"/><circle cx="40" cy="38" r="3" fill="#333"/><circle cx="60" cy="38" r="3" fill="#333"/><path d="M32 48 Q50 62 68 48" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/><circle cx="50" cy="72" r="22" fill="#e84393"/><text x="50" y="78" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">鑫</text></svg></div>
+<h3>鑫哥</h3><span class="role">运动健将</span>
+<p>活力四射，运动达人，旅行中的冒险精神和体力担当，有鑫哥不怕路远。</p>
 </div>
-</section><div class="th"><h3>🐅 飞虎出征</h3><p class="subtitle">深圳出发 · 5天4晚 · 广西之旅</p></div><div class="itin-section"><h2 style="margin-top:20px">🗺️ 详细行程</h2><div class="itin-card"><span class="day-label">第一天</span><h4>🚌 深圳 → 桂林（高铁直达）</h4><p class="itin-time">07:30 深圳北站集合出发 → 12:30 抵达桂林 → 下午游览</p><ul><li>07:30 深圳北站集合，乘坐 G高铁前往桂林</li><li>12:30 抵达桂林北站，入住酒店，稍作休息</li><li>14:00 游览《象鼻山》公园，打卡桂林城徽</li><li>18:00 晚餐：桂林恭城油茶 + 桂林米粉</li><li>19:30 夜游《两江四湖》，赏桂林夜景</li></p></ul></div><div class="itin-card"><span class="day-label">第二天</span><h4>🚣 漓江精华 · 阳朔风光</h4><p class="itin-time">全程漓江两岸 · 山水画廊</p><ul><li>08:00 前往《竹江码头》，乘坐漓江竹筏漂流</li><li>09:00 漂流精华段：九马画山、黄布倒影（21元人民币背景）</li><li>12:00 抵达兴坪古镇，午餐品尝啤酒鱼</li><li>14:00 游览阳朔《十里画廊》，骑行体验</li><li>17:00 入住阳朔西街特色民宿</li><li>19:00 晚餐：阳朔啤酒鱼 + 荔浦芋扣肉</li><li>20:00 观赏《印象刘三姐》实景演出</li></ul></div><div class="itin-card"><span class="day-label">第三天</span><h4>🏞️ 阳朔 → 德天瀑布（跨国大瀑布）</h4><p class="itin-time">全程约300公里，途经中越边境风光</p><ul><li>07:30 早餐后出发，沿中越边境公路前往德天瀑布</li><li>12:00 抵达硕龙镇，午餐品尝边境特色菜肴</li><li>13:30 游览《德天跨国大瀑布》，乘竹筏近距离观瀑</li><li>15:00 漫步界碑旁，感受一瀑跨两国的奇观</li><li>17:00 入住大新明仕田园景区民宿</li><li>18:30 晚餐：明仕稻田宴 + 壮家糯米酒</li></ul></div><div class="itin-card"><span class="day-label">第四天</span><h4>🎋 明仕田园 → 南宁（东盟之都）</h4><p class="itin-time">田园风光 → 城市美食</p><ul><li>07:30 晨骑明仕田园，感受喀斯特田园风光</li><li>09:00 游览《黑水河》，体验原始自然风光</li><li>11:00 出发前往南宁（约3小时车程）</li><li>14:00 抵达南宁，入住酒店休息</li><li>15:00 游览《青秀山》风景区，登高俯瞰南宁</li><li>18:00 晚餐：南宁老友粉 + 东盟美食街大满足</li><li>20:00 夜游《邕江》夜景，漫步南湖公园</li></ul></div><div class="itin-card"><span class="day-label">第五天</span><h4>🏖️ 南宁 → 北海银滩</h4><p class="itin-time">海滨放松 + 返程深圳</p><ul><li>08:00 早餐后出发前往北海（约2.5小时）</li><li>10:30 抵达北海《银滩》，沙滩休闲、踏浪拍照</li><li>12:00 午餐：北海海鲜大餐（鱿鱼、生蚝、皮皮虾）</li><li>14:00 游览《北海老街》，购买特产纪念品</li><li>16:00 从北海乘车/高铁返回深圳</li><li>20:00 预计抵达深圳，结束愉快的旅程</li></ul></div></div><div class="budget-section"><h2>💰 费用预算</h2><div class="budget-card"><table class="budget-table"><tr><th>项目</th><th>明细</th><th>人均（元）</th></tr><tr><td>🚄 高铁往返</td><td>深圳北-桂林北/北海-深圳北</td><td>约 650</td></tr><tr><td>🚌 当地包车</td><td>5天全程空调大巴（含司机）</td><td>约 400</td></tr><tr><td>🏨 住宿</td><td>4晚 标准双人间（含早）</td><td>约 400</td></tr><tr><td>🎫 景点门票</td><td>象鼻山+漓江竹筏+德天瀑布+青秀山+银滩</td><td>约 500</td></tr><tr><td>🍜 餐饮</td><td>4天正餐+早餐（含特色餐）</td><td>约 600</td></tr><tr><td>📷 保险费</td><td>短期旅游意外险</td><td>约 30</td></tr><tr><td>📝 杂费</td><td>矿泉水、零食、购物备用</td><td>约 200</td></tr></table><div class="budget-total"><div class="amount">合计约 ¥2,780/人</div><div class="per">按 6 人出行，总计约 ¥16,680（多人成行价格可议）</div></div><p class="budget-note">💡 注：以上为预估费用，实际费用以出行前确认为准。<br>费用包含：交通、住宿、餐饮、门票、保险、包车。<br>费用不含：个人购物、额外自费项目、特殊餐饮需求。</p></div></div></div><footer><div class="ft">🐅 🍃 ✨</div><p>© 2026 福田老友记 · </p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></li></li></li></li></li></li></li></li></li></li></li>飞虎出征，四海同行</p></footer
-<div class="enroll-btn-wrap">
-<button class="enroll-btn" onclick="openModal()">🎒 立即报名</button>
+
 </div>
+</section>
+
+<!-- Trip Section -->
+<section>
+<div class="ts">
+<div class="tb">
+<svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" style="max-width:500px">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#87CEEB"/>
+<stop offset="100%" stop-color="#E0F7FA"/>
+</linearGradient>
+</defs>
+<rect width="600" height="200" fill="url(#sky)" rx="16"/>
+<!-- Mountains -->
+<polygon points="0,160 60,80 120,140 180,60 240,130 300,90 360,140 420,70 480,120 540,85 600,150 600,200 0,200" fill="#4CAF50" opacity="0.6"/>
+<polygon points="0,170 80,100 160,150 240,95 320,145 400,100 480,140 560,110 600,155 600,200 0,200" fill="#388E3C" opacity="0.5"/>
+<!-- Sun -->
+<circle cx="480" cy="40" r="30" fill="#FFD54F" opacity="0.8"/>
+<!-- Cloud -->
+<ellipse cx="100" cy="35" rx="40" ry="18" fill="#fff" opacity="0.8"/>
+<ellipse cx="80" cy="30" rx="25" ry="15" fill="#fff" opacity="0.8"/>
+<ellipse cx="120" cy="30" rx="25" ry="15" fill="#fff" opacity="0.8"/>
+<!-- River -->
+<path d="M0,180 Q150,165 300,175 Q450,185 600,170 L600,200 L0,200 Z" fill="#4FC3F7" opacity="0.7"/>
+<!-- Tiger icon -->
+<rect x="220" y="80" width="80" height="50" rx="10" fill="#FF8F00"/>
+<circle cx="245" cy="98" r="5" fill="#fff"/><circle cx="265" cy="98" r="5" fill="#fff"/><circle cx="247" cy="98" r="3" fill="#333"/><circle cx="267" cy="98" r="3" fill="#333"/>
+<path d="M245,112 Q250,118 255,112" stroke="#E65100" stroke-width="2" fill="none"/>
+<text x="260" y="108" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">虎</text>
+<!-- Text -->
+<text x="300" y="175" text-anchor="middle" font-size="22" fill="#fff" font-weight="bold" text-shadow="1px 1px 3px rgba(0,0,0,0.3)">深圳 &rarr; 广西 · 飞虎出征</text>
+</svg>
+</div>
+<div class="th">
+<h3>&#128736; 飞虎出征 · 广西之旅</h3>
+<p class="subtitle">深圳出发 · 5天4晚 · 尽享山水美景与美食</p>
+</div>
+
+<!-- Itinerary -->
+<div class="itin-section">
+<h2>&#127769; 详细行程</h2>
+<p class="section-desc">从深圳出发，一路向西，领略广西的山水人文</p>
+
+<div class="itin-card">
+<span class="day-label">DAY 1</span>
+<h4>深圳 &rarr; 桂林</h4>
+<p>集合出发，抵达桂林，开启山水之旅</p>
+<ul>
+<li>&#128205; 上午 07:30 深圳集合，乘坐大巴前往桂林（约 5.5 小时）</li>
+<li>&#127859; 中午 13:00 抵达桂林，品尝桂林米粉</li>
+<li>&#128194; 下午 14:30 游览【象鼻山】，打卡桂林城徽</li>
+<li>&#127759; 傍晚 18:00 入住桂林市区酒店</li>
+<li>&#127860; 晚上 18:30 自由发挥，逛【正阳步行街】，夜赏两江四湖</li>
+</ul>
+</div>
+
+<div class="itin-card">
+<span class="day-label">DAY 2</span>
+<h4>桂林 &rarr; 阳朔</h4>
+<p>漓江泛舟，探秘山水画廊</p>
+<ul>
+<li>&#128205; 上午 08:30 乘坐漓江竹筏/游船，游览漓江精华段</li>
+<li>&#128064; 途经九马画山、黄布倒影（20元人民币背景取景地）</li>
+<li>&#129392; 中午 12:00 抵达阳朔，享用啤酒鱼午餐</li>
+<li>&#128736; 下午 14:00 骑行【十里画廊】，感受田园风光</li>
+<li>&#127876; 晚上 18:30 观看《印象·刘三姐》大型演出</li>
+<li>&#127860; 当晚入住阳朔遇龙河畔特色民宿</li>
+</ul>
+</div>
+
+<div class="itin-card">
+<span class="day-label">DAY 3</span>
+<h4>阳朔深度游</h4>
+<p>遇龙河漂流，探索溶洞奇观</p>
+<ul>
+<li>&#128205; 上午 08:00 体验【遇龙河人工竹筏漂流】，感受世外桃源</li>
+<li>&#128665; 上午 10:30 游览【银子岩】，探秘喀斯特溶洞奇观</li>
+<li>&#127859; 中午 12:30 品尝阳朔特色田螺酿、荔浦芋扣肉</li>
+<li>&#128247; 下午 14:30 打卡【十里稻田】拍照，自由骑行</li>
+<li>&#127860; 晚上组织篝火晚会 / 烧烤聚餐，释放激情</li>
+</ul>
+</div>
+
+<div class="itin-card">
+<span class="day-label">DAY 4</span>
+<h4>阳朔 &rarr; 德天瀑布</h4>
+<p>跨国大瀑布，感受大自然的震撼</p>
+<ul>
+<li>&#128205; 上午 07:30 乘车前往崇左德天瀑布（约 3 小时）</li>
+<li>&#128064; 中午 11:00 抵达【德天跨国大瀑布】，近距离感受亚洲第一大跨国瀑布</li>
+<li>&#129392; 沿瀑布栈道徒步，体验归国瀑布美景</li>
+<li>&#127859; 中午 12:30 品尝边境特色越南风味午餐</li>
+<li>&#127860; 下午 15:30 入住大新明仕田园景区民宿</li>
+<li>&#127796; 傍晚 17:30 漫步明仕田园，拍摄日落大片</li>
+</ul>
+</div>
+
+<div class="itin-card">
+<span class="day-label">DAY 5</span>
+<h4>明仕 &rarr; 深圳</h4>
+<p>圆满结束，满载回忆返程</p>
+<ul>
+<li>&#128205; 上午 08:00 睡到自然醒，在田园中散步、晨练</li>
+<li>&#127859; 上午 09:00 享用农家早餐，购买广西特产</li>
+<li>&#128205; 上午 10:00 乘车返程深圳（约 5 小时）</li>
+<li>&#128981; 下午 15:00 抵达深圳，结束愉快的广西之旅</li>
+<li>&#128173; 晚上各自分享旅行照片，期待下一次出发！</li>
+</ul>
+</div>
+</div>
+
+<!-- Budget -->
+<div class="budget-section">
+<h2>&#128176; 费用预算</h2>
+<div class="budget-card">
+<table class="budget-table">
+<thead>
+<tr><th>项目</th><th>内容说明</th><th>预估费用（元）</th></tr>
+</thead>
+<tbody>
+<tr><td>&#128641; 交通</td><td>深圳往返大巴 / 包车 + 当地小交通</td><td class="hl">800</td></tr>
+<tr><td>&#127970; 住宿</td><td>4 晚（2人 / 间，含桂林 1 晚 + 阳朔 2 晚 + 大新 1 晚）</td><td class="hl">600</td></tr>
+<tr><td>&#127859; 餐饮</td><td>4 天正餐 + 小吃 + 水果（约 120 元/天/人）</td><td class="hl">480</td></tr>
+<tr><td>&#127979; 门票</td><td>象鼻山、漓江游船、阳朔骑行、银子岩、德天瀑布等</td><td class="hl">500</td></tr>
+<tr><td>&#129392; 娱乐</td><td>《印象·刘三姐》演出 + 遇龙河漂流 + 竹筏</td><td class="hl">300</td></tr>
+<tr><td>&#127806; 保险</td><td>短期旅游意外险</td><td class="hl">30</td></tr>
+<tr><td>&#128231; 其他</td><td>矿泉水、零食、通讯、杂费等</td><td class="hl">70</td></tr>
+</tbody>
+</table>
+<div class="budget-total">
+<div class="amount">¥2,780</div>
+<div class="per">/ 人（约）</div>
+</div>
+<p class="budget-note">&#128161; 注：以上为预估费用，实际费用以出行前确认为准。<br>费用包含：交通、住宿、餐饮、门票、保险、包车。<br>费用不含：个人购物、额外自费项目、特殊餐饮需求。</p>
+</div>
+</div>
+
+<!-- Enrolled List -->
 <div class="enrolled-section">
-<h2>📋 已报名列表</h2>
+<h2>&#128221; 已报名列表</h2>
 <ul class="enrolled-list" id="enrolledList">
 <li class="enrolled-item"><div class="avatar-small">肥</div><div class="info"><div class="name">肥力</div><div class="meta">已报名 · 领队</div></div></li>
 <li class="enrolled-item"><div class="avatar-small">肥</div><div class="info"><div class="name">肥仔</div><div class="meta">已报名 · 气氛担当</div></div></li>
@@ -161,70 +347,101 @@
 <li class="enrolled-item"><div class="avatar-small">鑫</div><div class="info"><div class="name">鑫哥</div><div class="meta">已报名 · 运动健将</div></div></li>
 </ul>
 </div>
+
+<!-- ENROLL BUTTON - now inside the section, centered -->
+<div class="enrollment-section">
+<button class="enroll-btn" onclick="openModal()">&#127932; 立即报名</button>
+</div>
+
+</div><!-- close ts -->
+</section>
+
 <!-- Enrollment Modal -->
 <div class="modal-overlay" id="enrollModal" onclick="if(event.target===this)closeModal()">
 <div class="modal-box">
-<button class="close-btn" onclick="closeModal()">&times;</button>
+<button class="close-btn" onclick="closeModal()">&#10005;</button>
 <div id="formContent">
-<h3>🎒 飞虎出征 · 广西之旅</h3>
+<h3>&#127932; 飞虎出征 · 广西之旅</h3>
 <p class="modal-sub">填写报名信息，锁定你的席位！</p>
 <div class="form-group"><label for="name">姓名</label><input type="text" id="name" placeholder="请输入你的姓名" required></div>
 <div class="form-group"><label for="contact">联系方式（手机/微信）</label><input type="text" id="contact" placeholder="请输入手机号或微信号" required></div>
 <div class="form-group"><label for="count">报名人数</label><select id="count"><option value="1">1 人</option><option value="2" selected>2 人</option><option value="3">3 人</option><option value="4">4 人</option><option value="5">5 人</option><option value="6">6 人</option></select></div>
 <div class="form-group"><label for="note">备注（可选）</label><textarea id="note" placeholder="如有特殊需求请备注"></textarea></div>
-<button class="submit-btn" onclick="submitForm()`>✅ 提交报名</button>
+<button class="submit-btn" onclick="submitForm()">&#10004; 提交报名</button>
 </div>
 <div id="successContent" style="display:none">
-<div class="success-msg"><div class="icon">🎉</div>报名成功！</div>
-<p style="text-align:center;color:#666;margin-top:10px">肥力已收到你的报名信息，会尽快与你联系确认。<br>让我们广西见！🍃</p>
-<button class="submit-btn" style="margin-top:20px" onclick="closeModal()`>关闭</button>
+<div class="success-msg"><div class="icon">&#127881;</div>报名成功！</div>
+<p style="text-align:center;color:#666;margin-top:10px">肥力已收到你的报名信息，会尽快与你联系确认。<br>让我们广西见！&#127819;</p>
+<button class="submit-btn" style="margin-top:20px" onclick="closeModal()">关闭</button>
 </div>
 </div>
 </div>
+
+<!-- Footer -->
+<footer><div class="ft">&#128053; &#127819; &#128154;</div><p>&copy; 2026 福田老友记 · 飞虎出征，四海同行</p></footer>
+
 <!-- JavaScript -->
 <script>
-function openModal(){document.getElementById("enrollModal").classList.add("active");document.getElementById("formContent").style.display="block";document.getElementById("successContent").style.display="none"}
-function closeModal(){document.getElementById("enrollModal").classList.remove("active")}
-function submitForm(){
-var name=document.getElementById("name").value.trim();
-var contact=document.getElementById("contact").value.trim();
-var count=document.getElementById("count").value;
-var note=document.getElementById("note").value.trim();
-if(!name){alert("请输入姓名");return}
-if(!contact){alert("请输入联系方式");return}
-var now=new Date();
-var dateStr=now.getFullYear()+"-"+(now.getMonth()+1).toString().padStart(2,"0")+"-"+now.getDate().toString().padStart(2,"0")+" "+now.getHours().toString().padStart(2,"0")+":"+now.getMinutes().toString().padStart(2,"0");
-var record="["+dateStr+"] "+name+" | 联系方式: "+contact+" | 人数: "+count+"人 | 备注: "+(note||"无")+"\n";
-// Save to localStorage
-var enrolled=JSON.parse(localStorage.getItem("enrollments")||"[]");
-enrolled.push({name:name,contact:contact,count:count,note:note,time:dateStr});
-localStorage.setItem("enrollments",JSON.stringify(enrolled));
-// Save to text file via download
-var blob=new Blob(["福田老友记 · 飞虎出征广西之旅 · 报名信息\n\n"],{type:"text/plain;charset=utf-8"});
-var link=document.createElement("a");link.href=URL.createObjectURL(blob);link.download="福田老友记_报名信息.txt";document.body.appendChild(link);link.click();document.body.removeChild(link);
-// Also append to blob
-var blob2=new Blob([record],{type:"text/plain;charset=utf-8"});
-var link2=document.createElement("a");link2.href=URL.createObjectURL(blob2);link2.download="报名_"+name+".txt";document.body.appendChild(link2);link2.click();document.body.removeChild(link2);
-// Update list
-document.getElementById("formContent").style.display="none";document.getElementById("successContent").style.display="block";
-// Add to enrolled list
-var list=document.getElementById("enrolledList");
-var newItem=document.createElement("li");newItem.className="enrolled-item";
-newItem.innerHTML="<div class=\"avatar-small\">"+name.charAt(0)+"</div><div class=\"info\"><div class=\"name\">"+name+"</div><div class=\"meta\">已报名 · "+count+"人</div></div>;
-list.appendChild(newItem);
-// Clear form
-document.getElementById("name").value=";document.getElementById("contact").value=";document.getElementById("count").value="2";document.getElementById("note").value=";
+function openModal(){
+  document.getElementById("enrollModal").classList.add("active");
+  document.getElementById("formContent").style.display="block";
+  document.getElementById("successContent").style.display="none";
 }
-// Load saved enrollments on page load
+function closeModal(){
+  document.getElementById("enrollModal").classList.remove("active");
+}
+function submitForm(){
+  var name=document.getElementById("name").value.trim();
+  var contact=document.getElementById("contact").value.trim();
+  var count=document.getElementById("count").value;
+  var note=document.getElementById("note").value.trim();
+  if(!name){alert("请输入姓名");return}
+  if(!contact){alert("请输入联系方式");return}
+  var now=new Date();
+  var dateStr=now.getFullYear()+"-"+(now.getMonth()+1).toString().padStart(2,"0")+"-"+now.getDate().toString().padStart(2,"0")+" "+now.getHours().toString().padStart(2,"0")+":"+now.getMinutes().toString().padStart(2,"0");
+  var record="["+dateStr+"] "+name+" | 联系方式: "+contact+" | 人数: "+count+"人 | 备注: "+(note||"无")+"\n";
+  // Save to localStorage
+  var enrolled=JSON.parse(localStorage.getItem("enrollments")||"[]");
+  enrolled.push({name:name,contact:contact,count:count,note:note,time:dateStr});
+  localStorage.setItem("enrollments",JSON.stringify(enrolled));
+  // Download as txt
+  var blob=new Blob(["福田老友记 \u00B7 飞虎出征广西之旅 \u00B7 报名信息\n\n"+record],{type:"text/plain;charset=utf-8"});
+  var link=document.createElement("a");
+  link.href=URL.createObjectURL(blob);
+  link.download="福田老友记_报名信息.txt";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  // Show success
+  document.getElementById("formContent").style.display="none";
+  document.getElementById("successContent").style.display="block";
+  // Add to enrolled list
+  var list=document.getElementById("enrolledList");
+  var newItem=document.createElement("li");
+  newItem.className="enrolled-item";
+  newItem.innerHTML='<div class="avatar-small">'+name.charAt(0)+'</div><div class="info"><div class="name">'+name+'</div><div class="meta">已报名 \u00B7 '+count+'人</div></div>';
+  list.appendChild(newItem);
+  // Clear form
+  document.getElementById("name").value="";
+  document.getElementById("contact").value="";
+  document.getElementById("count").value="2";
+  document.getElementById("note").value="";
+}
+// Load saved enrollments
 window.onload=function(){
-var enrolled=JSON.parse(localStorage.getItem("enrollments")||"[]");
-var list=document.getElementById("enrolledList");
-enrolled.forEach(function(e){
-var newItem=document.createElement("li");newItem.className="enrolled-item";
-newItem.innerHTML="<div class=\"avatar-small\">"+e.name.charAt(0)+"</div><div class=\"info\"><div class=\"name\">"+e.name+"</div><div class=\"meta\">已报名 · "+e.count+"人 · "+e.time+"</div></div>;
-list.appendChild(newItem);
-});
+  var enrolled=JSON.parse(localStorage.getItem("enrollments")||"[]");
+  var list=document.getElementById("enrolledList");
+  enrolled.forEach(function(e){
+    var newItem=document.createElement("li");
+    newItem.className="enrolled-item";
+    newItem.innerHTML='<div class="avatar-small">'+e.name.charAt(0)+'</div><div class="info"><div class="name">'+e.name+'</div><div class="meta">已报名 \u00B7 '+e.count+'人 \u00B7 '+e.time+'</div></div>';
+    list.appendChild(newItem);
+  });
 };
-</script></footer>
+</script>
+
 </body>
 </html>
+
+
+
